@@ -1,0 +1,3 @@
+@echo off
+echo Starting STUDYFLOW in Background Mode...
+npm run dev:bg

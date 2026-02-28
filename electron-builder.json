@@ -1,0 +1,39 @@
+{
+    "productName": "STUDYFLOW",
+    "appId": "com.antigravity.studyflow",
+    "asar": true,
+    "directories": {
+        "output": "release/${version}"
+    },
+    "files": [
+        "dist",
+        "dist-electron"
+    ],
+    "win": {
+        "target": [
+            {
+                "target": "nsis",
+                "arch": [
+                    "x64"
+                ]
+            }
+        ]
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true,
+        "shortcutName": "STUDYFLOW"
+    },
+    "mac": {
+        "target": [
+            "dmg"
+        ],
+        "artifactName": "${productName}-${version}-${arch}.${ext}"
+    },
+    "linux": {
+        "target": [
+            "AppImage"
+        ],
+        "category": "Education"
+    }
+}
